@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D704BA62868EBC6006F079F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D704BA52868EBC6006F079F /* Array.swift */; };
 		0D975BAE2868A9FA00E663DA /* PuzzleSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D975BAD2868A9FA00E663DA /* PuzzleSwiftApp.swift */; };
 		0D975BB02868A9FA00E663DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D975BAF2868A9FA00E663DA /* ContentView.swift */; };
 		0D975BB22868A9FC00E663DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D975BB12868A9FC00E663DA /* Assets.xcassets */; };
 		0D975BB52868A9FC00E663DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D975BB42868A9FC00E663DA /* Preview Assets.xcassets */; };
+		0D975BBD2868ABCE00E663DA /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D975BBC2868ABCE00E663DA /* Puzzle.swift */; };
+		0D975BC02868ACFA00E663DA /* PuzzleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D975BBF2868ACFA00E663DA /* PuzzleList.swift */; };
+		0D975BC22868AD0200E663DA /* PuzzleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D975BC12868AD0200E663DA /* PuzzleItem.swift */; };
+		0D975BC42868AD9500E663DA /* PuzzleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D975BC32868AD9500E663DA /* PuzzleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D704BA52868EBC6006F079F /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		0D975BAA2868A9FA00E663DA /* PuzzleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D975BAD2868A9FA00E663DA /* PuzzleSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleSwiftApp.swift; sourceTree = "<group>"; };
 		0D975BAF2868A9FA00E663DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D975BB12868A9FC00E663DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D975BB42868A9FC00E663DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D975BBC2868ABCE00E663DA /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		0D975BBF2868ACFA00E663DA /* PuzzleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleList.swift; sourceTree = "<group>"; };
+		0D975BC12868AD0200E663DA /* PuzzleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItem.swift; sourceTree = "<group>"; };
+		0D975BC32868AD9500E663DA /* PuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,10 @@
 		0D975BAC2868A9FA00E663DA /* PuzzleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				0D975BCA2868EB4E00E663DA /* Extensions */,
+				0D975BC52868C0BC00E663DA /* Utilities */,
+				0D975BBE2868ACD900E663DA /* Puzzles */,
+				0D975BBB2868ABC300E663DA /* Models */,
 				0D975BAD2868A9FA00E663DA /* PuzzleSwiftApp.swift */,
 				0D975BAF2868A9FA00E663DA /* ContentView.swift */,
 				0D975BB12868A9FC00E663DA /* Assets.xcassets */,
@@ -65,6 +79,39 @@
 				0D975BB42868A9FC00E663DA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D975BBB2868ABC300E663DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D975BBC2868ABCE00E663DA /* Puzzle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D975BBE2868ACD900E663DA /* Puzzles */ = {
+			isa = PBXGroup;
+			children = (
+				0D975BBF2868ACFA00E663DA /* PuzzleList.swift */,
+				0D975BC12868AD0200E663DA /* PuzzleItem.swift */,
+				0D975BC32868AD9500E663DA /* PuzzleViewModel.swift */,
+			);
+			path = Puzzles;
+			sourceTree = "<group>";
+		};
+		0D975BC52868C0BC00E663DA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0D975BCA2868EB4E00E663DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D704BA52868EBC6006F079F /* Array.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D975BBD2868ABCE00E663DA /* Puzzle.swift in Sources */,
+				0D975BC02868ACFA00E663DA /* PuzzleList.swift in Sources */,
+				0D975BC42868AD9500E663DA /* PuzzleViewModel.swift in Sources */,
 				0D975BB02868A9FA00E663DA /* ContentView.swift in Sources */,
+				0D704BA62868EBC6006F079F /* Array.swift in Sources */,
+				0D975BC22868AD0200E663DA /* PuzzleItem.swift in Sources */,
 				0D975BAE2868A9FA00E663DA /* PuzzleSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
