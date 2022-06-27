@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D704BA62868EBC6006F079F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D704BA52868EBC6006F079F /* Array.swift */; };
+		0D7879672869A9F60036CA7F /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0D7879662869A9F60036CA7F /* demo.gif */; };
 		0D975BAE2868A9FA00E663DA /* PuzzleSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D975BAD2868A9FA00E663DA /* PuzzleSwiftApp.swift */; };
 		0D975BB02868A9FA00E663DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D975BAF2868A9FA00E663DA /* ContentView.swift */; };
 		0D975BB22868A9FC00E663DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D975BB12868A9FC00E663DA /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0D704BA52868EBC6006F079F /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		0D7879662869A9F60036CA7F /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		0D975BAA2868A9FA00E663DA /* PuzzleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D975BAD2868A9FA00E663DA /* PuzzleSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleSwiftApp.swift; sourceTree = "<group>"; };
 		0D975BAF2868A9FA00E663DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		0D975BAC2868A9FA00E663DA /* PuzzleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				0D7879662869A9F60036CA7F /* demo.gif */,
 				0D975BCA2868EB4E00E663DA /* Extensions */,
 				0D975BC52868C0BC00E663DA /* Utilities */,
 				0D975BBE2868ACD900E663DA /* Puzzles */,
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D975BB52868A9FC00E663DA /* Preview Assets.xcassets in Resources */,
+				0D7879672869A9F60036CA7F /* demo.gif in Resources */,
 				0D975BB22868A9FC00E663DA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
