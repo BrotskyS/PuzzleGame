@@ -6,31 +6,37 @@
 //
 
 import SwiftUI
+import MusicKit
 
 struct PuzzleList: View {
     @StateObject private var viewModel = PuzzleViewModel()
     let gridItems = [
-          GridItem(.flexible()),
-          GridItem(.flexible()),
-          GridItem(.flexible()),
-      ]
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
     
     var body: some View {
-        ZStack{
+        VStack {
+            SongsListView()
+            ZStack{
                 ForEach(viewModel.puzzleList, id: \.id) { puzzle in
                     
-                        PuzzleItem(
-                            puzzle: puzzle
-                        )
-                        .environmentObject(viewModel)
+                    PuzzleItem(
+                        puzzle: puzzle
+                    )
+                    .environmentObject(viewModel)
                     
-                 }
+                }
+            }
+            .padding()
+            .frame(width: viewModel.getContainerSize(), height: viewModel.getContainerSize(), alignment: .topLeading)
+            .background(.blue.opacity(0.5))
+            .cornerRadius(30)
+            
+            MediaControlsView()
+                .environmentObject(viewModel)
         }
-        .padding()
-        .frame(width: viewModel.getContainerSize(), height: viewModel.getContainerSize(), alignment: .topLeading)
-        
-        .background(.red.opacity(0.5))
-        .cornerRadius(30)
     }
 }
 
