@@ -16,6 +16,7 @@ struct Puzzle: Equatable{
 
 
 extension Puzzle {
+    static let initList = Dictionary(uniqueKeysWithValues: Puzzle.all.map{ ($0.id, $0.id) })
     static let all = [
         Puzzle(id: 0, color: .red),
         Puzzle(id: 1, color: .blue),
